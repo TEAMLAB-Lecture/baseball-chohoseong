@@ -88,7 +88,7 @@ def is_duplicated_number(three_digit):
     # ===Modify codes below=============
     # 조건에 따라 변환되어야 할 결과를 result 변수에 할당
 
-    result = True if len(set(three_digit)) == 3 else False
+    result = True if len(set(three_digit)) != 3 else False
     # ==================================
     return result
 
@@ -290,7 +290,7 @@ def main():
 
             result = list()
             result = get_strikes_or_ball(user_input, random_number)
-            print(f"Strike : {result[0]} , Balls : {result[1]}")
+            print(f"Strikes : {result[0]} , Balls : {result[1]}")
 
         if The_end: break
 
